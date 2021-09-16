@@ -17,7 +17,7 @@ public class BrowserStackAndroidSelenideTests extends TestBase {
     @Test
     @DisplayName("Search Selenide in Wikipedia")
     void searchSelenideTest() {
-        step("Type search", () -> {
+        step("Search Selenide", () -> {
             $(MobileBy.AccessibilityId("Search Wikipedia")).click();
             $(MobileBy.id("org.wikipedia.alpha:id/search_src_text")).val("Selenide");
         });
